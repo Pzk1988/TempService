@@ -14,6 +14,7 @@ import java.util.List;
 
 @SpringBootApplication
 public class TempServiceApplication {
+
 	public static void main(String[] args) {
 		SpringApplication.run(TempServiceApplication.class, args);
 	}

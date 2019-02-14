@@ -1,14 +1,15 @@
 package com.homeAutomation.TempService.Service;
 
+import com.homeAutomation.TempService.Interfaces.ITemperatureService;
 import com.homeAutomation.TempService.Model.Temperature;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class TemperatureService {
+public class StaticTemperatureService implements ITemperatureService{
     private Collection<Temperature> tempCollection;
 
-    public TemperatureService(){
+    public StaticTemperatureService(){
         tempCollection = new ArrayList();
         tempCollection.add( new Temperature("28-000005bbdcec", 2243));
         tempCollection.add( new Temperature("28-000005bbe0e6", -232));
