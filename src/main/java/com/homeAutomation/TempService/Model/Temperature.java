@@ -1,14 +1,14 @@
 package com.homeAutomation.TempService.Model;
 
 public class Temperature {
-    public Temperature(String id, int temperature) {
+    public Temperature(String id, double temperature) {
         this.temperature = temperature;
         this.id = id;
     }
-    public int getTemperature() {
+    public double getTemperature() {
         return temperature;
     }
-    public void setTemperature(int temperature) {
+    public void setTemperature(double temperature) {
         this.temperature = temperature;
     }
     public String getId() {
@@ -18,6 +18,6 @@ public class Temperature {
         this.id = id;
     }
 
-    private int temperature;
+    private double temperature;
     private String id;
 }

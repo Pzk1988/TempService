@@ -11,8 +11,8 @@ public class StaticTemperatureService implements ITemperatureService{
 
     public StaticTemperatureService(){
         tempCollection = new ArrayList();
-        tempCollection.add( new Temperature("28-000005bbdcec", 2243));
-        tempCollection.add( new Temperature("28-000005bbe0e6", -232));
+        tempCollection.add( new Temperature("28-000005bbdcec", 22.43));
+        tempCollection.add( new Temperature("28-000005bbe0e6", -2.32));
     }
 
     public Temperature getById(String id){
